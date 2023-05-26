@@ -1,0 +1,441 @@
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 여기까지 css리셋코드 */
+
+header{
+
+    height: auto;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
+.header-top {
+    width: 100%;
+    background-color: #ffb300;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.header-bt{
+    height: 50px;
+    background-color: #fff;
+    display: none;
+
+}
+.header-bt > ul {
+    display: flex;
+    font-size: 13px;
+    text-align: center;
+    font-weight: 700;
+    gap: 24px;
+    padding: 20px 40px;
+    
+    
+}
+
+
+main {
+    height: 100%;
+    font-size: 16px;
+}
+
+#banner {
+    padding: 54px 0 20px;
+}
+
+main > :first-child {
+    background: #ffffff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+body {
+
+    width: 100%;
+    height: auto;
+    font-size: 12px;
+    color: black;
+}
+
+
+
+#h_logo {
+    margin: 15px;
+    background-image: url("https://cdn-pro-web-250-249.cdn-nhncommerce.com/prinics2_godomall_com/data/skin/mobile/m_udweb_201105/img/banner/1bb87d41d15fe27b500a4bfcde01bb0e_14269.png");
+    width: 200px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.right_menu {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 8px;
+
+}
+
+.product1 {
+    text-align: center;
+    padding: 24px 16px;
+    font-weight: 700;
+   
+}
+.product1 > p > span {
+    color: #555555;
+    font-size: 12px;
+    font-weight: normal;
+
+}
+
+
+#go1 {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 8px;
+    
+    
+}
+
+#go1 > .goodslist{
+    display: block;
+    border: 1px solid #eee;
+    padding:10px 5px;
+    border-radius: 10px;
+}
+
+
+.goodslist > :first-child {
+
+    width: 100%;
+    padding-top: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+
+}
+
+.goodstext1 {
+    font-size: 12px;
+    color: #333333; 
+    line-height: normal;
+    padding:8px 0px ;
+}
+
+.goodstext1 > span{
+    text-decoration: line-through;
+    line-height: 1px;
+}
+.goodstext2 { 
+    font-size : 13px;
+    padding: 8px 0px;
+}
+
+.icon {
+    padding-top: 8px;
+}
+
+
+.goodslist > #goods1 { 
+    background-image: url("https://cdn-pro-web-250-249.cdn-nhncommerce.com/prinics2_godomall_com/data/goods/20/08/34/1000000003/1000000003_main_024.png");
+}
+
+.goodslist > #goods2 { 
+    background-image: url("https://cdn-pro-web-250-249.cdn-nhncommerce.com/prinics2_godomall_com/data/goods/20/08/34/1000000001/1000000001_main_099.png");
+}
+.goodslist > #goods3 { 
+    background-image: url("https://cdn-pro-web-250-249.cdn-nhncommerce.com/prinics2_godomall_com/data/goods/20/08/34/1000000000/1000000000_main_05.png");
+}
+.goodslist > #goods4 { 
+    background-image: url("https://cdn-pro-web-250-249.cdn-nhncommerce.com/prinics2_godomall_com/data/goods/20/09/36/1000000020/1000000020_main_075.png");
+}
+
+.goodslist > #goods5{
+    background-image: url("https://cdn-pro-web-250-249.cdn-nhncommerce.com/prinics2_godomall_com/data/goods/21/07/29/1000000060/1000000060_main_049.jpg");
+}
+
+.goodslist> #goods6{
+    background-image: url("https://cdn-pro-web-250-249.cdn-nhncommerce.com/prinics2_godomall_com/data/goods/23/03/10/1000000250/1000000250_main_099.png");
+}
+
+.goodslist > #goods7{
+    background-image: url("https://cdn-pro-web-250-249.cdn-nhncommerce.com/prinics2_godomall_com/data/goods/20/08/34/1000000002/1000000002_main_044.png");
+}
+
+
+/**
+ * +code
+ */
+
+ #menu{
+    position: absolute;
+    top:0;
+    width: 60%;
+    height: 100vh;
+    background-color: #333333;
+    transform: translateX(-100%);
+    transition-duration: 1s;
+ }
+
+
+ #ximg {
+    position: absolute;
+    left: 100%;
+    background-image: url("https://m.kodakphotoprinter.co.kr/data/skin/mobile/m_udweb_201105/udweb/img/icon_left_x.png");
+    width: 40px;
+    height: 40px;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translateX(-100%);
+    transition-duration: 1s;
+ }
+ 
+ .menu > img{
+    width: 24px;
+    height: 24px;
+ }
+
+ footer {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+ }
+
+ .ft_info1{
+    border-top: 2px solid #000;
+
+ }
+
+ .ft_info1 > ul {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    font-size: 13px;
+    color: #555555;
+    padding: 20px 10px;
+    border-bottom: 1px solid #ecedec;
+    
+    box-sizing: border-box;
+ }
+
+
+
+.tf_info2{
+    
+}
+
+.ft_info2 > .ft_ad { 
+    font-size: 11px ;
+    line-height: 18px;
+    color: #555555;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+#ft_end{
+
+    height: 50px;
+    background-color: #2f2f2f;
+}
+
+#ft_end> p{
+    font-size: 12px;
+    padding-top: 20px;
+    color: #ff353b;
+
+}
+#ft_end > p > span {
+    color:#fff;
+}
+
+
+
+@media(min-width:1024px) {
+    /*pc버전*/
+    
+    #banner {
+        height: 500px;
+        padding: 70px 0 20px;
+        
+    }
+    .header-top {
+        height: 70px;
+    }
+    .header-bt{
+        display: block;
+    }
+    #h_logo{
+        width: 261px;
+        height: 30px;
+    }
+    .product1{
+        padding:  40px;
+    }
+    .product1 > p {
+        text-align: left;
+        font-size: 19px;
+    }
+    #go1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+    }
+}
