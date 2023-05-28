@@ -1,137 +1,61 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-a,
-abbr,
-acronym,
-address,
-applet,
-article,
-aside,
-audio,
-b,
-big,
-blockquote,
-body,
-canvas,
-caption,
-center,
-cite,
-code,
-dd,
-del,
-details,
-dfn,
-div,
-dl,
-dt,
-em,
-embed,
-fieldset,
-figcaption,
-figure,
-footer,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-header,
-hgroup,
-html,
-i,
-iframe,
-img,
-ins,
-kbd,
-label,
-legend,
-li,
-mark,
-menu,
-nav,
-object,
-ol,
-output,
-p,
-pre,
-q,
-ruby,
-s,
-samp,
-section,
-small,
-span,
-strike,
-strong,
-sub,
-summary,
-sup,
-table,
-tbody,
-td,
-tfoot,
-th,
-thead,
-time,
-tr,
-tt,
-u,
-ul,
-var,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
 body {
-    line-height: 1;
+	line-height: 1;
 }
-ol,
-ul {
-    list-style: none;
+ol, ul {
+	list-style: none;
 }
-blockquote,
-q {
-    quotes: none;
+blockquote, q {
+	quotes: none;
 }
-blockquote:after,
-blockquote:before,
-q:after,
-q:before {
-    content: '';
-    content: none;
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-/* 여기까지 css리셋코드 */
-
+/*css 리셋코드*/
 header{
 
     height: auto;
     width: 100%;
     position: fixed;
     z-index: 999;
+    display: table;
+    
 }
 
 .header-top {
@@ -321,12 +245,12 @@ body {
  * +code
  */
 
- #menu{
+#menu{
     position: absolute;
     top:0;
     width: 60%;
     height: 100vh;
-    background-color: #333333;
+    background-color: #eee;
     transform: translateX(-100%);
     transition-duration: 1s;
  }
@@ -336,14 +260,70 @@ body {
     position: absolute;
     left: 100%;
     background-image: url("https://m.kodakphotoprinter.co.kr/data/skin/mobile/m_udweb_201105/udweb/img/icon_left_x.png");
-    width: 40px;
-    height: 40px;
+    width: 24px;
+    height: 24px;
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
     transform: translateX(-100%);
     transition-duration: 1s;
  }
+
+ #menu> #nav_language{
+    font-size: 15px;
+    font-weight: bolder;
+    color: #262626;
+    padding: 15px;
+ }
+
+ #menu> #nav_header{
+    text-align: center;
+ }
+
+ #nav_header >:first-child{
+    padding: 20px 15px;
+    color: #fff;
+    font-size: 13px;
+    text-align: left;
+    font-weight: bolder;
+    background-color: #333;
+ }
+ #nav_login{
+    background-color: #fff;
+    padding: 10px;
+ }
+#nav_login> ul{
+    display: flex;
+    gap: 8px;
+    font-size: 12px;
+
+}
+#nav_login> ul>li{
+    width: 85%;
+    padding: 10px 0;
+    border: 1px solid #ccc;
+}
+
+#nav_link{
+    padding: 10px;
+    background-color: #fff;
+}
+#nav_link> ul{
+    display: flex;
+    gap: 8px;
+    font-size: 12px;
+    text-align: center;
+    align-items: center;
+
+}
+
+#nav_link>ul>li{
+    width: 85%;
+    padding: 10px 0;
+    border: 1px solid #ccc;
+}
+
+
  
  .menu > img{
     width: 24px;
