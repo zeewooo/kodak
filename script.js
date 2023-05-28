@@ -1,6 +1,8 @@
 let goodslistEls = document.querySelectorAll(".goodslist");
 let mebtnEl = document.querySelector(".menu");
 let menuEl = document.querySelector("#menu");
+let menuE2 = document.querySelector("#ximg");
+
 
 /**
  * 1. forEach
@@ -16,8 +18,14 @@ goodslistEls.forEach((element,index)=>{
     })
 })
 
+
+
 mebtnEl.addEventListener("click",()=>{
     menuEl.style.transform="translateX(0%)";
+})
+
+menuE2.addEventListener("click",()=>{
+    menuEl.style.transform="translateX(-100%)";
 })
 
 
@@ -37,12 +45,3 @@ var swiper = new Swiper(".mySwiper", {
     }
    
 });
-
-
-
-
-
-
-
-
-
